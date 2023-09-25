@@ -5,3 +5,39 @@ html {
 img{
   max-width: 50%;
 }
+body {
+  display: grid ;
+  grid-template-areas:"one one one"      
+                      "two three three"
+                      "four four four"
+
+
+  
+}
+
+body > * {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: .5em solid black
+}
+header {grid-area: one;}
+
+nav {grid-area: two;}
+
+main {grid-area: three;}
+
+footer {grid-area: four;}
+
+table {
+  border-style: solid;
+  font-family: sans-serif;
+  font-size: 1.5em; 
+}
+
+td {border-style: solid;
+   color:aqua;}
+th {
+  background-color: #000000;
+  color: #ffff
+}
+
